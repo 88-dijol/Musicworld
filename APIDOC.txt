@@ -166,7 +166,7 @@ attributes:{
 
 
 
-2)api:adding  reviews to each album
+12)api:adding  reviews to each album
 
     urls:Starting development server at http://127.0.0.1:8000/api/addreviews/id/
 
@@ -178,7 +178,7 @@ attributes:{
 
    status:completed
 
-3)api:retrieving each reviews
+13)api:retrieving each reviews
 
     urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
 
@@ -190,7 +190,7 @@ attributes:{
 
     status:completed
 
-4)api:updating the review
+14)api:updating the review
 
     urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
 
@@ -202,7 +202,7 @@ attributes:{
 
     status:completed
 
-5)api:deleting  the review
+15)api:deleting  the review
 
     urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
 
