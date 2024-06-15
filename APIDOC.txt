@@ -1,0 +1,215 @@
+Schema:Album
+
+attributes:{
+    title,
+    year,
+    director,
+    language,
+    created_date,
+    updated_date,
+    is_active
+}
+
+1)api:listing all albums
+
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/
+
+    method:get
+
+    body:nill
+
+    authorization:nill
+
+    status:completed
+
+2)api:adding  albums
+
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/
+
+    method:post
+
+    body:{title,year,director,language}
+
+    authorization:nill
+
+   status:completed
+
+3)api:retrieving the details of an album
+
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/
+
+    method:get
+
+    body:nill
+
+    authorization:nill
+
+    status:completed
+
+4)api:updating an  album
+
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/
+
+    method:put
+
+    body:{title,year,director,language}
+
+    authorization:nill
+
+    status:completed
+
+5)api:deleting an album
+
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/
+
+    method:delete
+
+    body:nill
+
+    authorization:nill
+
+    status:completed
+
+6)api for adding a track
+
+    url: http://127.0.0.1:8000/api/albums/{id}/add_tracks/
+
+    method:POST
+    
+    body:{title,year,director,language}
+
+    authorization:nill
+
+    status:completed
+
+    ============================================Track-==============
+
+Schema:track
+
+attributes:{
+    title,singers, 
+    duration,
+    track_num,
+    album,
+    created_date,
+    updated_date,
+    is_active
+}
+
+7)api:retrieving the details of tracks
+
+    urls:Starting development server at http://127.0.0.1:8000/api/tracks/{id}/
+
+    method:get
+
+    body:nill
+
+    authorization:nill
+
+    status:completed
+
+
+8)api:updating the track
+
+    urls:Starting development server at http://127.0.0.1:8000/api/tracks/{id}/
+
+    method:put
+
+    body:{"title","singers", "duration","track_num"}
+
+    authorization:nill
+
+    status:completed
+
+9)api:deleting the track
+
+    urls:Starting development server at http://127.0.0.1:8000/api/tracks/{id}/
+
+    method:delete
+
+    body:nill
+
+    authorization:nill
+
+    status:completed
+
+=============================================userregistration============================================
+
+10)registration of userregistration
+ 
+    urls:Starting development server at http://127.0.0.1:8000/api/register/
+
+    method:POST
+    
+    body:{username,email,password,first_name,last_name}
+
+    authorization:nill
+
+    status:completed
+
+
+===============================================token====================================================
+
+11)api:deleting the track
+
+    urls:Starting development server at http://127.0.0.1:8000/api/token/
+
+    method:post
+
+    body:{username,password}
+
+    authorization:nill
+
+    status:completed
+
+============================================review=====================================================
+
+
+
+2)api:adding  reviews to each album
+
+    urls:Starting development server at http://127.0.0.1:8000/api/addreviews/id/
+
+    method:post
+
+    body:{comment,rating}
+
+    authorization:token
+
+   status:completed
+
+3)api:retrieving each reviews
+
+    urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
+
+    method:get
+
+    body:nill
+
+    authorization:token
+
+    status:completed
+
+4)api:updating the review
+
+    urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
+
+    method:put
+
+    body:{comment,rating}
+
+    authorization:token
+
+    status:completed
+
+5)api:deleting  the review
+
+    urls:Starting development server at http://127.0.0.1:8000/api/reviews/id/
+
+    method:delete
+
+    body:nill
+
+    authorization:token
+
+    status:completed
