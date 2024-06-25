@@ -150,7 +150,7 @@ attributes:{
 
 ===============================================token====================================================
 
-11)api:deleting the track
+11)api:fetching token
 
     urls:Starting development server at http://127.0.0.1:8000/api/token/
 
@@ -164,11 +164,22 @@ attributes:{
 
 ============================================review=====================================================
 
+Schema:Review
+
+attributes:{
+    comment,
+    rating,
+    album,
+    user,
+    created_date,
+    updated_date,
+    is_active
+}
 
 
 12)api:adding  reviews to each album
 
-    urls:Starting development server at http://127.0.0.1:8000/api/addreviews/id/
+    urls:Starting development server at http://127.0.0.1:8000/api/albums/id/review/
 
     method:post
 

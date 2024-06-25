@@ -19,7 +19,7 @@ urlpatterns=[
 
     path("token/",ObtainAuthToken.as_view()),
 
-    path("addreviews/<int:pk>/",views.addReviewView.as_view()),
+    path("albums/<int:pk>/review/",views.addReviewView.as_view()),
 
     path("reviews/<int:pk>/",views.ReviewMixinView.as_view())
 

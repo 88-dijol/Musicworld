@@ -13,7 +13,7 @@ class Registration(serializers.ModelSerializer):
 
         read_only_fields=['id']
         
-
+    #serializer.save--nn to encrypt the password we use create method with prameters(self,validated dat)---also method overriding is taking place in this create method
     def create(self,validated_data):
 
         return User.objects.create_user(**validated_data)
